@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderDetail"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textColor="@color/main"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:src="@drawable/vector_one"
+        android:layout_below="@id/detailTitle"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/orderfullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="Full Name"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/detailImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/orderfullname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/detailEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/detailAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="ItemCount"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/detailPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/detailItemsPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="ItemPrice"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/detailItems"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailItemKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="Key"
+        android:textSize="18sp"
+        android:textColor="@color/main"
+        android:layout_below="@id/detailItemsPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:menu_fab_size="normal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        app:menu_colorPressed="@color/main"
+        app:menu_colorNormal="@color/main"
+        app:menu_icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:fab_showShadow="true"
+            app:fab_colorNormal="@color/white"
+            app:fab_size="mini"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

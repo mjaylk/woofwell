@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13311713791",
+    "project_id": "woofwell-cf10a",
+    "storage_bucket": "woofwell-cf10a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13311713791:android:541feae4f27bb17cd5c7ca",
+        "android_client_info": {
+          "package_name": "com.dn.woofwell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOfogDxJqelLMxccvnq15oLcYBzM2DpU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

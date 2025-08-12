@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    tools:context=".ProductDetail"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleArea"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/round_keyboard_backspace_24"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View Product "
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:src="@drawable/upload"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/titleArea"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/image"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Title"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Brand"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Type"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Age"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Description"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Youtube Link"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Price"
+                android:textSize="18sp"
+                android:textColor="@color/main"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:menu_fab_size="normal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        app:menu_colorPressed="@color/main"
+        app:menu_colorNormal="@color/main"
+        app:menu_icon="@drawable/round_menu"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:fab_showShadow="true"
+            app:fab_colorNormal="@color/main_dark"
+            app:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:fab_showShadow="true"
+            app:fab_colorNormal="#FF7979"
+            app:fab_size="mini"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
