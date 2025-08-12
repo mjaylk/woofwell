@@ -20,18 +20,13 @@ WoofWell PetCare is an Android app designed to simplify pet adoption and selling
 
 ---
 
-## Screenshots
-
-*(Add some screenshots here to showcase your app)*
-
----
-
 ## Getting Started
 
 ### Prerequisites
 
 - Android Studio installed  
 - Android device or emulator  
+- **Firebase project configured** (required for authentication and data storage)
 
 ### Installation
 
